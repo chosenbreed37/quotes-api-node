@@ -6,8 +6,8 @@ Simple REST API serving up the finest selection of curated quotes
 + express
 + mongoose
 + babel-cli
-+ winston and morgan for logging
-+ Async/Await
++ winston/morgan
++ async/await
 
 ## Installation
 
