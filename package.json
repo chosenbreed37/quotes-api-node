@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "The finest selection of curated quotes",
   "scripts": {
-    "start": "NODE_ENV=dev nodemon ./server.js --exec babel-node",
+    "start": "NODE_ENV=live nodemon ./server.js --exec babel-node",
+    "start:dev": "NODE_ENV=dev nodemon ./server.js --exec babel-node",
     "build": "babel . -d dist --presets es2015,stage-2 --ignore spec.js,node_modules",
     "serve": "node dist/server.js",
     "start_babel": "babel-node ./server.js --preset=babel-preset-es2015",

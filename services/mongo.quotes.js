@@ -10,7 +10,9 @@ const QuoteSchema = new Schema({
 const QuoteModel = mongoose.model('Quote', QuoteSchema);
 
 QuoteModel.getAll = () => {
-    return QuoteModel.find({});
+    return QuoteModel
+        .find({})
+        .then(docs => docs.map(q => ({ id: q._id, text: q.Text, author: q.Author, source: q.Source })));
 };
 
 const createDataStore = () => {
