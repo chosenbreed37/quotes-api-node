@@ -7,4 +7,3 @@ jobs:
        - checkout
        - run: npm install
        - run: npm run test
-       - run: ssh deploy@138.68.176.15
