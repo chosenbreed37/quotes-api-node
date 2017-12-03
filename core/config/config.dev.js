@@ -4,7 +4,7 @@ const config = {};
 
 config.logFileDir = path.join(__dirname, '../../log');
 config.logFileName = 'app.log';
-config.dbHost = process.env.dbHost || '127.0.0.1';
+config.dbHost = process.env.dbHost || 'db';
 config.dbPort = process.env.dbPort || '27017';
 config.dbName = process.env.dbName || 'quotes';
 config.serverPort = process.env.serverPort || 3000;
